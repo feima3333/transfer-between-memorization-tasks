@@ -68,6 +68,22 @@ data/        CIFAR-10 (gitignored, auto-downloaded)
 
 ## Reproducing from scratch
 
+### Optional: upstream checkpoints (from the Release)
+
+Only needed for **Table 1** (`norm_growth.py` reads the donor weights) or to **retrain
+downstream / surgery** (they warm-start from a donor epoch). **Just viewing the figures needs
+nothing here** — they render from `figure_data/`.
+
+Download `upstream_checkpoints.zip` from the [Releases page](../../releases) and unzip it into
+the repo root — the archive contains a `checkpoints/` folder, so the weights land at
+`checkpoints/upstream_*/checkpoints/` automatically (no manual folder creation):
+
+```bash
+# after downloading the zip into the repo root
+unzip upstream_checkpoints.zip                                  # Linux / macOS
+# Windows PowerShell:  Expand-Archive upstream_checkpoints.zip -DestinationPath .
+```
+
 Every seed the paper uses is an explicit flag defaulting to the paper's value.
 
 ```bash

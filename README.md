@@ -1,6 +1,6 @@
 # Localizing Transfer Between Memorization Tasks
 
-Reproduction code for the paper **"Localizing Transfer Between Memorization Tasks."** In this paper, we investigate transfer learning under memorization. This enables us to generate many synthetic tasks like image classification with random labels or random pixels. We identify **equivalent transfer**, where one additional pre-training epoch acts approximately like one fine-tuning epoch and **non-equivalent transfer**, where pre-training on a severely mismatched data distribution, for a short period, can be even more **efficient** than directly training on the downstream task. Also we decompose and localize the transfer effect into two separate effects: a **"trivial"** magnitude-driven transfer (in the last layer) and a **"non-trivial"** structure-driven transfer (in the other layers), which can be partially attributed to the weight covariance.
+Reproduction code for the paper **"Localizing Transfer Between Memorization Tasks."** In this paper, we investigate transfer learning under memorization. This enables us to generate many synthetic tasks like image classification with random labels or random pixels. We identify **equivalent transfer**, where one additional pre-training epoch acts approximately like one fine-tuning epoch, and **non-equivalent transfer**, where pre-training on a severely mismatched data distribution, for a short period, can be even more **efficient** than directly training on the downstream task. We also decompose and localize the transfer effect into two separate effects: a **"trivial"** magnitude-driven transfer (in the last layer) and a **"non-trivial"** structure-driven transfer (in the other layers), which can be partially attributed to the weight covariance.
 
  
 The whole paper — **7 figures + 1 table** — regenerates from this repo with no path edits.
@@ -114,6 +114,7 @@ python train/surgery_svd.py       --donor randlabel --condition reset_sv_svinit_
 
 ## Reproducibility notes
 
+
 - **Committed metrics, not weights.** The `metrics.json` files (+ cache CSVs) the figures read live
   in `figure_data/` and are committed (a few MB of JSON); the model weights (`*.pth`, ~30 GB total)
   stay in `checkpoints/`, gitignored. Upstream donor checkpoints are on the GitHub Release for anyone
@@ -121,7 +122,7 @@ python train/surgery_svd.py       --donor randlabel --condition reset_sv_svinit_
 - **Cross-machine noise.** A re-trained run lands on a batch order one permutation off the published
   one (data order is the only source of variation — no augmentation, fixed lr). Trends are unaffected;
   an individual t0 moves by ~1 epoch, and Table 1's ratios by a few percent (e.g. FC ×24.3 vs the
-  paper's ×23.7). This is expected — the figures sell trends, and the noise floor is quoted where it
+  paper's ×23.7). This is expected — the figures are about trends, and the noise floor is quoted where it
   matters.
 
 ## License

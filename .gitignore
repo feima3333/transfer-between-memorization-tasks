@@ -1,0 +1,22 @@
+# --- Python / environments ---
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+.idea/
+.vscode/
+.DS_Store
+
+# --- data: CIFAR-10 is auto-downloaded by torchvision ---
+data/
+
+# --- generated figures ---
+outputs/
+
+# --- checkpoints: model weights only, all local (donor trajectories are on the GitHub Release) ---
+# The figures read metrics.json / caches from figure_data/ (committed), so a fresh clone reproduces
+# every figure without these weights.
+checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/

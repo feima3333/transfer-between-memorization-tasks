@@ -1,0 +1,13 @@
+curve,pretraining_epoch,t0,t0_plotted,k,method,rmse,n_downstream_epochs,final_train_acc,run_dir
+Fixed labels,0,41.1199,41.1199,0.3881,curve_fit,0.0283,51,0.9999,runs_randlabel_warmstart_labelseed42/randlabel42_init-epoch0000_arch-withBN_bnstats-keep_seed-21
+Fixed labels,10,38.6122,38.6122,0.3798,curve_fit,0.0286,49,1.0,runs_randlabel_warmstart_labelseed42/randlabel42_init-epoch0010_arch-withBN_bnstats-keep_seed-21
+Fixed labels,20,29.9124,29.9124,0.3805,curve_fit,0.0297,40,0.9999,runs_randlabel_warmstart_labelseed42/randlabel42_init-epoch0020_arch-withBN_bnstats-keep_seed-21
+Fixed labels,30,19.1314,19.1314,0.4019,curve_fit,0.0262,29,1.0,runs_randlabel_warmstart_labelseed42/randlabel42_init-epoch0030_arch-withBN_bnstats-keep_seed-21
+Fixed labels,40,8.8384,8.8384,0.5394,curve_fit,0.0155,18,1.0,runs_randlabel_warmstart_labelseed42/randlabel42_init-epoch0040_arch-withBN_bnstats-keep_seed-21
+Fixed labels,47,10.285,10.285,0.5589,curve_fit,0.0214,21,0.9999,runs_randlabel_warmstart_labelseed42/randlabel42_init-last_arch-withBN_bnstats-keep_seed-21
+Resampled labels,0,40.0353,41.1199,0.3873,curve_fit,0.0287,49,0.9999,runs_warmstart_different_epoch_labelseed42_resample_ckpt200/randlabel42_init-epoch000_arch-withBN_bnstats-keep_seed-21
+Resampled labels,10,49.2623,49.2623,0.3876,curve_fit,0.0275,59,1.0,runs_warmstart_different_epoch_labelseed42_resample_ckpt200/randlabel42_init-epoch0010_arch-withBN_bnstats-keep_seed-21
+Resampled labels,20,50.5331,50.5331,0.3889,curve_fit,0.0275,60,1.0,runs_warmstart_different_epoch_labelseed42_resample_ckpt200/randlabel42_init-epoch0020_arch-withBN_bnstats-keep_seed-21
+Resampled labels,30,51.8554,51.8554,0.3878,curve_fit,0.0267,61,0.9999,runs_warmstart_different_epoch_labelseed42_resample_ckpt200/randlabel42_init-epoch0030_arch-withBN_bnstats-keep_seed-21
+Resampled labels,40,53.5351,53.5351,0.3838,curve_fit,0.0272,63,1.0,runs_warmstart_different_epoch_labelseed42_resample_ckpt200/randlabel42_init-epoch0040_arch-withBN_bnstats-keep_seed-21
+Resampled labels,47,54.6018,54.6018,0.3789,curve_fit,0.0275,64,0.9999,runs_warmstart_different_epoch_labelseed42_resample_ckpt200/randlabel42_init-epoch0047_arch-withBN_bnstats-keep_seed-21

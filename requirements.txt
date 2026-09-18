@@ -1,0 +1,13 @@
+# Direct dependencies, pinned to the versions used to produce the paper's results.
+# Tested on torch 2.9.1 + CUDA 12.6; CPU-only also works (training is just slower).
+# torch / torchvision are pinned without the +cuXXX local tag so pip picks the build for
+# your platform -- for a CUDA-matched wheel, follow the selector at https://pytorch.org.
+torch==2.9.1
+torchvision==0.24.1
+numpy==2.3.5
+pandas==3.0.0
+matplotlib==3.10.8
+
+# notebooks
+jupyterlab==4.5.2
+ipykernel==7.1.0
